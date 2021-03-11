@@ -16,8 +16,7 @@ import os, sys
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = os.path.dirname(__file__)
-sys.path.insert(0, os.path.join(PROJECT_ROOT, "apps")) # расширение пути проекта
-
+sys.path.insert(0, os.path.join(PROJECT_ROOT, "apps"))  # расширение пути проекта
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -29,7 +28,6 @@ SECRET_KEY = '*=c3^*e)djk!wtmk6b10abxxrporkot)jury=-%i!d*ths)67i'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -60,7 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PROJECT_ROOT, "templates") # команда расширяющая путь чтобы джанго видел путь
+            os.path.join(PROJECT_ROOT, "templates")  # команда расширяющая путь чтобы джанго видел путь
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -77,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'webone.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -87,7 +84,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -107,7 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -120,7 +115,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
